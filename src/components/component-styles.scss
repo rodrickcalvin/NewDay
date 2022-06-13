@@ -1,0 +1,93 @@
+.overlay { // overlay in a variation of black with blur
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #000005, $alpha: 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.modal {
+  background-color: rgba($color: #ffffff, $alpha: 1.0);
+  position: relative;
+  border-radius: 12px;
+  padding: 10px;
+  width: 65%;
+
+
+  &-header { // modal header section ------------------
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+    h3 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .close-icon {
+      position: absolute;
+      right: 16px;
+    }
+  }
+
+  &-body { // modal body section -----------------------
+    border-top: 1px solid #000005;
+    border-bottom: 1px solid #000005;
+    padding: 10px 0;
+    margin: 10px 0;
+
+    .image-link {
+      border-radius: 12px;
+
+      img {
+        border-radius: 12px;
+        width: 30%;
+        box-shadow: 0px 0px 9px 0 #000005;
+      }
+    }
+
+    .image-description {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .feedback-input {
+      border: 2px solid #7800f0;
+      border-radius: 6px;
+      padding: 10px;
+      height: 40px;
+      width: 80%;
+      font-size: 1rem;
+    }
+  }
+
+  &-footer {
+    button {
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid #7800f0;
+      color: #7800f0;
+      background-color: #fff;
+      font-size: 1.2rem;
+    }
+    button:hover {
+      color: #fff;
+      background-color: #7800f0;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .modal {
+    &-header {
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

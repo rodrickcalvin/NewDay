@@ -1,0 +1,27 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.toggle-button { // modal toggling button styles
+  font-size: 1.2rem;
+  background-color: #7800f0;
+  color: #fff;
+  font-weight: 550;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+
+  &:hover {
+    background: linear-gradient(270deg, #ac00e9 13.48%, #6b4ef9 57.51%, #2c50f1 118.61%) left bottom no-repeat;
+    border: none;
+    font-weight: 550;
+    padding: 10px 20px;
+  }
+}
+
+img {
+  margin-top: 30px;
+  width: 75%;
+  border-radius: 5px;
+}
